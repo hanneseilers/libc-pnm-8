@@ -97,19 +97,13 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="libc-pnm-8.cdt.managedbuild.target.gnu.exe.473197172" name="Executable" projectType="cdt.managedbuild.target.gnu.exe"/>
-	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.97922881;cdt.managedbuild.config.gnu.exe.release.97922881.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.381731072;cdt.managedbuild.tool.gnu.c.compiler.input.94936896">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.1586447598;cdt.managedbuild.config.gnu.exe.debug.1586447598.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.252682164;cdt.managedbuild.tool.gnu.c.compiler.input.878795226">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
+		<project id="libc-pnm-8.org.eclipse.linuxtools.cdt.autotools.core.projectType.1771323804" name="GNU Autotools" projectType="org.eclipse.linuxtools.cdt.autotools.core.projectType"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Build (GNU)">
+			<resource resourceType="PROJECT" workspacePath="/libc-pnm-8"/>
+		</configuration>
 		<configuration configurationName="Debug">
 			<resource resourceType="PROJECT" workspacePath="/libc-pnm-8"/>
 		</configuration>
@@ -117,4 +111,11 @@
 			<resource resourceType="PROJECT" workspacePath="/libc-pnm-8"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="de.innot.avreclipse.configuration.lib.release.1825660827;de.innot.avreclipse.configuration.lib.release.1825660827.;de.innot.avreclipse.tool.compiler.winavr.lib.release.324959288;de.innot.avreclipse.compiler.winavr.input.470796129">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="de.innot.avreclipse.core.AVRGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
