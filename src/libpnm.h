@@ -31,7 +31,7 @@ void pnm_set_file(uint8_t filename[]);
 void pnm_set_file_size(uint8_t width, uint8_t height);
 uint8_t pnm_create(uint16_t width, uint16_t height, uint8_t colorspace);
 uint8_t pnm_get(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t *buffer);
-void pnm_write(uint16_t *buffer, uint16_t x, uint16_t y, uint16_t width, uint16_t height);
+void pnm_write(uint8_t *buffer, uint16_t x, uint16_t y, uint16_t width, uint16_t height);
 
 /* INTERNAL FUNCTIONS */
 uint8_t _pnm_cir(void);

@@ -186,7 +186,39 @@ uint8_t pnm_get(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t
  * x:		Left position where to insert the buffer
  * y:		Top position where to insert the buffer
  */
-void pnm_write(uint16_t *buffer, uint16_t x, uint16_t y, uint16_t width, uint16_t height){
+void pnm_write(uint8_t *buffer, uint16_t x, uint16_t y, uint16_t width, uint16_t height){
+
+	if( _pnm_cir() && x < pnm_file_data.width && y < pnm_file_data.height ){
+
+		// open file
+		pnm_fopen( pnm_file_data.fname, 'a' );
+
+		uint8_t vx = x;
+		uint8_t i = 0, j = 0;
+
+		// iterate through file and write buffer
+		while( y < pnm_file_data.height && j < height  ){
+
+			// seek for next line start
+			pnm_fseek( PNM_HEADER_OFFSET + pnm_file_data.width*y + x );
+
+			// write a single line
+			while( vx < pnm_file_data.width && i < width ){
+				pnm_fwrite( *((uint8_t*) buffer + j*width + i ) );
+				i++;
+				vx++;
+			}
+
+			// set variables
+			vx = x;
+			i = 0;
+			y++;
+			j++;
+		}
+
+		pnm_fclose();
+
+	}
 
 }
 

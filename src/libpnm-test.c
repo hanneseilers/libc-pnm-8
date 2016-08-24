@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE	10
+#define SIZE	16
 
 // File pointer used by c file functions
 FILE *file;
@@ -53,7 +53,11 @@ int main(void){
 			buffer[i][j] = x++;
 		}
 	}
-	pnm_write( buffer, 0, 0, SIZE, SIZE );
+	pnm_write( *buffer, 0, 0, SIZE, SIZE );
+	printf("> changed image:\n");
+
+	// read image data
+	readImageData();
 
 	return 0;
 
@@ -92,7 +96,7 @@ uint8_t _fopen(uint8_t name[], uint8_t rw){
 	else if( rw == 'w' )
 		file = fopen( (char*) name, "w" );
 	else if( rw == 'a' )
-		file = fopen( (char*) name, "a" );
+		file = fopen( (char*) name, "r+" );
 
 	return NULL != file;
 }
