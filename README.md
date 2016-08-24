@@ -7,6 +7,8 @@ Include the following files into your workspace and compile them together with y
 * libpnm.h
 * libpnm.c
 
+To get the files, you can clone the repository or download a release version.
+
 # Usage
 Include the libpnm.h into your code:
 
