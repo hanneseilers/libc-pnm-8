@@ -31,7 +31,7 @@ void	(*pnm_fseek)(uint32_t);				// file seek offset
  * pnm_init( fopen, fclose, fread, fwrite, fseek )
  * expects function pointers for following functions:
  *
- * uint8_t fopen(uint8_t filename, uint8_t rw_flag)		open file with filename and rw flag ('r' = read, 'w'=write, 'a'=append), returns true if successful
+ * uint8_t fopen(uint8_t filename, uint8_t rw_flag)		open file with filename and rw flag ('r' = read, 'w'=overwrite, 'a'=append/change), returns true if successful
  * uint8_t fclose(void)									close opened file, returns true if successful
  * uint8_t fread(void)									read one byte from file
  * void fwrite(uint8_t data)							write one byte to file
